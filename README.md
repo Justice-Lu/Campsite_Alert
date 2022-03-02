@@ -10,12 +10,18 @@ Welcome to Campsite Alert. The script simply updates you on the availability of 
 ## Using Campsite_Alert
 
 Some of the required parameters of the script consists of 
-`--start_date --end_date --park_id`.
+
+`--start_date --end_date --park_id`
 
 An example to run the code is listed below: 
-The given parameters simply state that you're interested in looking for the campsite available between 
+
+The given parameters simply state that you're interested in looking for the 
+campsite available between 
+
 starting date at `2022-03-09` to `2022-03-30` 
+
 at the park `232453` and the specific campsite of `042`.
+
 Continue to refresh the results every `60` seconds for `60` minutes. 
 
 ```bash
