@@ -43,6 +43,13 @@ Campsite 042 status:
      AVAILABLE on 2022-03-09
 ```
 
+## Park and campsite IDs 
+To find the necessary IDs for the park you're interested in. Simply navigate to through the 
+[recreation.gov](https://recreation.gov/)
+and find your park of interest. For example, the 
+[Upper Pines](https://www.recreation.gov/camping/campgrounds/232447)
+shows the url of 
+`https://www.recreation.gov/camping/campgrounds/232447`. The park_id is simply the numeric value at the end of the url, which is `232447`. 
 
 
 
