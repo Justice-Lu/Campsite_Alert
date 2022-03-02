@@ -14,23 +14,25 @@ Some of the required parameters of the script consists of
 
 An example to run the code is listed below: 
 The given parameters simply state that you're interested in looking for the campsite available between starting date at `2022-03-09` to `2022-03-30` at the park `232453` and refresh the results every `60` seconds for `60` minutes. 
-`
-python3 Campsite_Alert.py \
-    --start_date 2022-03-01 \
-    --end_date 2022-03-30 \
-    --park_id 232453 \
-    --campsite 042 \
-    --cycle_time 60 \
-    --total_time 60
-`
+
+    ```bash
+    python3 Campsite_Alert.py \
+        --start_date 2022-03-01 \
+        --end_date 2022-03-30 \
+        --park_id 232453 \
+        --campsite 042 \
+        --cycle_time 60 \
+        --total_time 60
+    ```
 
 Output
-`
+
+```bash
 From the specified dates of 2022-03-01 to 2022-03-30 at park_id 232447 
 Campsite 042 status:  
      AVAILABLE on 2022-03-08
      AVAILABLE on 2022-03-09
-`
+```
 
 
 
