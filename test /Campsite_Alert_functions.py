@@ -1,6 +1,5 @@
 import pandas as pd 
 import numpy as np
-import sys
 import requests 
 # import datetime
 import re 
@@ -38,9 +37,6 @@ def get_available_dates(website):
         site_id = website[campsite]['site']
         available_dates[site_id] = [] #assigns actual site_id 
         for day in website[campsite]['availabilities'].keys():
-            if website[campsite]['availabilities'][day] == "Not Reservable":
-                print("##### The park_id you've selected is Not Reservable #####")
-                sys.exit()
             if website[campsite]['availabilities'][day] == "Available":
                 available_dates[site_id].append(re.sub("T00:00:00Z", "", day)) 
         if available_dates[site_id] == []:

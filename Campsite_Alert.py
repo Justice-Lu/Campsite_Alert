@@ -41,13 +41,15 @@ while True:
     time.sleep(args.cycle_time - time.time() % args.cycle_time)
     
 #     print('Running, time = ' + str(elapsed_time))
+
+    
+    url = campsite_function.get_url(args.start_date[0:8]+"01", args.park_id)    
+    website = campsite_function.get_website(url)
     
     dates = campsite_function.my_dates(args.start_date, args.end_date)
-    url = campsite_function.get_url(args.start_date, args.park_id)    
-    website = campsite_function.get_website(url)
     available_dates = campsite_function.get_available_dates(website)
     compatible_dates = campsite_function.filter_by_dates(available_dates, dates)
-    compatible_dates = campsite_function.filter_by_campsite(available_dates, args.campsite)
+    compatible_dates = campsite_function.filter_by_campsite(compatible_dates, args.campsite)
     
     output = campsite_function.print_results(compatible_dates, args.start_date, args.end_date, args.park_id)    
     print(output)
