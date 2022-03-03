@@ -25,7 +25,7 @@ at the park `232453` and the specific campsite of `042`.
 Continue to refresh the results every `1` minute for `1` hour. 
 
 ```bash
-python3 Campsite_Alert.py \
+python Campsite_Alert.py \
     --start_date 2022-03-01 \
     --end_date 2022-03-30 \
     --park_id 232453 \
@@ -44,7 +44,7 @@ Campsite 042 status:
 ```
 
 ## Park and campsite IDs 
-#### --park_id
+`--park_id`
 To find the necessary IDs for the park you're interested in. Simply navigate to through the 
 [recreation.gov](https://recreation.gov/)
 and find your park of interest. For example, the 
@@ -52,7 +52,8 @@ and find your park of interest. For example, the
 shows the url of 
 `https://www.recreation.gov/camping/campgrounds/232447`. The park_id is simply the numeric value at the end of the url, which is `232447`. 
 
-#### --campsite
+
+`--campsite`
 The campsite is simply the designated `Sites` referred to on the chart. 
 ![Campsite chart](images/Campsite_availability_chart.png)
 
