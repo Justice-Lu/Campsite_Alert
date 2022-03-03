@@ -53,7 +53,7 @@ shows the url of
 `https://www.recreation.gov/camping/campgrounds/232447`. The park_id is simply the numeric value at the end of the url, which is `232447`. 
 
 #### --campsite
-The campsite is simply the designated site number referred to on the chart. 
+The campsite is simply the designated `Site` referred to on the chart. 
 ![Campsite chart](images/Campsite_availability_chart.png)
 
 
