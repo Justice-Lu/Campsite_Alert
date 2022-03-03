@@ -45,6 +45,7 @@ Campsite 042 status:
 
 ## Park and campsite IDs 
 `--park_id`
+
 To find the necessary IDs for the park you're interested in. Simply navigate to through the 
 [recreation.gov](https://recreation.gov/)
 and find your park of interest. For example, the 
@@ -54,6 +55,7 @@ shows the url of
 
 
 `--campsite`
+
 The campsite is simply the designated `Sites` referred to on the chart. 
 ![Campsite chart](images/Campsite_availability_chart.png)
 
