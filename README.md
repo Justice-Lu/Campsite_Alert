@@ -22,7 +22,7 @@ starting date at `2022-03-09` to `2022-03-30`
 
 at the park `232453` and the specific campsite of `042`.
 
-Continue to refresh the results every `60` seconds for `60` minutes. 
+Continue to refresh the results every `1` minute for `1` hour. 
 
 ```bash
 python3 Campsite_Alert.py \
@@ -30,8 +30,8 @@ python3 Campsite_Alert.py \
     --end_date 2022-03-30 \
     --park_id 232453 \
     --campsite 042 \
-    --cycle_time 60 \
-    --total_time 60
+    --cycle_time 1 \
+    --total_time 1
 ```
 
 Output
@@ -53,7 +53,7 @@ shows the url of
 `https://www.recreation.gov/camping/campgrounds/232447`. The park_id is simply the numeric value at the end of the url, which is `232447`. 
 
 #### --campsite
-The campsite is simply the designated `Site` referred to on the chart. 
+The campsite is simply the designated `Sites` referred to on the chart. 
 ![Campsite chart](images/Campsite_availability_chart.png)
 
 

@@ -21,7 +21,7 @@ parser.add_argument('--park_id',
 parser.add_argument('--campsite', nargs = '+',
                     help = "Desired specific campsites can be tracked.")
 parser.add_argument('--cycle_time',
-                    default=10,
+                    default=1,
                     type = float, 
                     help = "Seconds until results are refreshed")
 parser.add_argument('--total_time',
@@ -38,7 +38,7 @@ start_time = time.time()
 while True:
     current_time = time.time()
     elapsed_time = round(current_time - start_time,0)
-    time.sleep(args.cycle_time - time.time() % args.cycle_time)
+    time.sleep(args.cycle_time*60 - time.time() % args.cycle_time*60)
     
 #     print('Running, time = ' + str(elapsed_time))
 
@@ -54,6 +54,6 @@ while True:
     output = campsite_function.print_results(compatible_dates, args.start_date, args.end_date, args.park_id)    
     print(output)
         
-    if elapsed_time > args.total_time*60:
+    if elapsed_time > args.total_time*60*60:
         print("Finished iterating in: " + str(int(elapsed_time))  + " seconds \n script stopped")
         break
