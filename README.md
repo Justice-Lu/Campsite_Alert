@@ -16,9 +16,9 @@ Some of the required parameters of the script consists of
 An example to run the code is listed below: 
 
 The given parameters simply state that you're interested in looking for the 
-campsite available between 
+campsite available...
 
-starting date at `2022-03-09` to `2022-03-30` 
+between `2022-03-09` and `2022-03-30` 
 
 at the park `232453` and the specific campsite of `042`.
 
